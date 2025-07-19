@@ -9,6 +9,13 @@
   font-family: "Poppins";
   src: url("../public/fonts/Poppins-Regular.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: "Poppins";
+  font-weight: 200;
+  src: url("../public/fonts/Poppins-Light.ttf") format("truetype");
+}
+
 @theme inline {
   --font-josefin: "Josefin Sans", sans-serif;
   --font-poppins: "Poppins", sans-serif;
