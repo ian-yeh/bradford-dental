@@ -1,4 +1,5 @@
 import ServiceCard from "@/components/ServiceCard";
+import SpecialsCard from "@/components/SpecialsCard";
 import Header from "@/components/Header";
 import Image from "next/image";
 import TeamCard from "@/components/TeamCard";
@@ -40,10 +41,10 @@ const Home = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-[80%] w-full items-center">
           {/* Left Column - Content */}
           <div className="text-center md:text-left">
-            <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold font-josefin leading-tight md:leading-snug mb-4 md:mb-6">
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold font-josefin leading-tight md:leading-snug mb-4 md:mb-6">
               Your Family's Smile is Our Priority
             </h1>
-            <h2 className="mb-8 md:mb-16 text-lg sm:text-xl md:text-2xl font-extralight text-gray-200 font-poppins leading-relaxed">
+            <h2 className="mb-8 md:mb-16 text-lg sm:text-xl md:text-xl lg:text-2xl font-extralight text-gray-200 font-poppins leading-relaxed">
               Bradford Dental Care provides comprehensive dental care tailored
               to help your smile shine its brightest
             </h2>
@@ -71,7 +72,7 @@ const Home = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-[80%] mx-auto items-center">
           {/* Left Column - Text */}
           <div className="">
-            <h2 className="text-4xl md:text-5xl md:text-start text-center font-bold font-josefin text-purple leading-snug">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl md:text-start text-center font-bold font-josefin text-purple leading-snug">
               A dental clinic worth smiling for. Give us a visit!
             </h2>
           </div>
@@ -92,7 +93,7 @@ const Home = () => {
                 />
               </svg>
               <div className="text-purple font-josefin">
-                <p className="font-semibold text-4xl">Bradford, Ontario</p>
+                <p className="font-semibold text-2xl md:text-3xl lg:text-4xl">Bradford, Ontario</p>
                 <p>140 Holland St. West</p>
               </div>
             </div>
@@ -110,36 +111,7 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Why Choose Us Section 
-      <div className="bg-white py-30 px-8">
-        <div className="max-w-[80%] mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold font-josefin text-purple leading-snug">
-              Why Bradford Families Chose Us
-            </h2>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <ServiceCard 
-              title="General Dentistry"
-              description="Comprehensive care for all ages, from routine check-ups to complex procedures."
-              imageSrc="/images/general-dentistry.jpg"
-            />
-            <ServiceCard 
-              title="Cosmetic Dentistry"
-              description="Enhancing smiles with teeth whitening, veneers, and more."
-              imageSrc="/images/cosmetic-dentistry.jpg"
-            />
-            <ServiceCard 
-              title="Orthodontics"
-              description="Straightening teeth with braces and clear aligners for a healthier smile."
-              imageSrc="/images/orthodontics.jpg"
-            />
-
-          </div>
-        </div>
-      </div>
-
-      */}
+      
 
       {/* Team Section */}
       <div className="bg-white py-16 px-8">
@@ -169,7 +141,7 @@ const Home = () => {
           </div>
 
           <div className="text-center mt-12">
-            <button className="font-josefin bg-purple text-yellow-100 px-6 py-3 rounded-3xl font-semibold hover:bg-yellow-100 transition-colors hover:text-purple border-2 border-purple">
+            <button className="font-josefin bg-purple text-white px-6 py-3 rounded-3xl font-semibold hover:bg-whitetransition-colors hover:text-purple border-2 border-purple">
               Meet the Team
             </button>
           </div>
@@ -178,7 +150,7 @@ const Home = () => {
 
       {/* Services Section */}
       <div className="bg-white py-16 px-8">
-        <div className="text-center mb-16 max-w-[80%] mx-auto">
+        <div className="text-center mb-12 md:mb-20 max-w-[80%] mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold font-josefin text-purple leading-snug">
             Complete Care for Every Age
           </h2>
@@ -186,10 +158,10 @@ const Home = () => {
 
         <div className="grid md:grid-cols-2 gap-16 items-start max-w-[80%] mx-auto">
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold font-josefin text-purple leading-snug">
+            <h2 className="text-3xl text-center md:text-left md:text-4xl mb-2 font-bold font-josefin text-purple leading-snug">
               Comprehensive Dental Care
             </h2>
-            <p className="text-xl leading-relaxed font-poppins">
+            <p className="text-lg md:text-xl leading-relaxed font-poppins text-center md:text-left">
               From routine maintenance to complex restorations, we provide
               complete dental solutions for the whole family.
             </p>
@@ -237,9 +209,71 @@ const Home = () => {
             </div>
           </div>
         </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16 max-w-[80%] mx-auto">
+          <div>
+            <h2 className="text-3xl md:text-4xl mb-2 font-bold font-josefin text-purple leading-snug text-center md:text-left">
+              In-Office Specials
+            </h2>
+            <p className="text-lg md:text-xl leading-relaxed font-poppins text-center md:text-left">
+              We understand that your smile is one of the most memorable parts
+              of any first impression.
+            </p>
+          </div>
+          <div>
+            <SpecialsCard 
+              title="Take Home Whitening"
+              description="Get a comprehensive exam and cleaning for just $99."
+              imageSrc="/images/take-home-whitening.jpg"
+            />
+            <SpecialsCard 
+              title="Zoom Whitening"
+              description="New patients can enjoy a free consultation to discuss their dental needs."
+              imageSrc="/images/zoom-whitening.jpg"
+            />  
+            <SpecialsCard 
+              title="Sportsguards"
+              description="Protect your smile with our custom sportsguards."
+              imageSrc="/images/sportsguard.jpg"
+            />
+          </div>
+
+        </div>
       </div>
+
+
     </div>
   );
 };
 
 export default Home;
+
+{/* Why Choose Us Section 
+      <div className="bg-white py-30 px-8">
+        <div className="max-w-[80%] mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold font-josefin text-purple leading-snug">
+              Why Bradford Families Chose Us
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <ServiceCard 
+              title="General Dentistry"
+              description="Comprehensive care for all ages, from routine check-ups to complex procedures."
+              imageSrc="/images/general-dentistry.jpg"
+            />
+            <ServiceCard 
+              title="Cosmetic Dentistry"
+              description="Enhancing smiles with teeth whitening, veneers, and more."
+              imageSrc="/images/cosmetic-dentistry.jpg"
+            />
+            <ServiceCard 
+              title="Orthodontics"
+              description="Straightening teeth with braces and clear aligners for a healthier smile."
+              imageSrc="/images/orthodontics.jpg"
+            />
+
+          </div>
+        </div>
+      </div>
+
+      */}
