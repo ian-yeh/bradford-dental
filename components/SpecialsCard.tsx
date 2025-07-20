@@ -12,7 +12,7 @@ const SpecialsCard = ({ title, description, imageSrc }: SpecialsCardProps) => {
   const [dropDown, setDropDown] = useState(false);
   
   return (
-    <div className='border-2 border-purple rounded-lg overflow-hidden mb-8'> 
+    <div className='border-2 border-purple rounded-lg overflow-hidden mb-8 cursor-pointer hover:bg-yellow-100 transition-colors' onClick={() => setDropDown(!dropDown)}> 
       {/* Main card content */}
       <div className='p-4 flex items-center justify-between'>
         <div className='flex items-center gap-4'>
@@ -26,14 +26,13 @@ const SpecialsCard = ({ title, description, imageSrc }: SpecialsCardProps) => {
           <h3 className='font-medium text-xl md:text-3xl text-purple font-josefin'>{title}</h3>
         </div>
         
-        <button 
-          onClick={() => setDropDown(!dropDown)}
-          className={`w-6 h-6 md:w-8 md:h-8 rounded-full md:border-2 border-purple bg-white text-purple font-bold text-xl flex items-center justify-center hover:bg-purple hover:text-white transition-colors ${
+        <div 
+          className={`w-6 h-6 md:w-8 md:h-8 rounded-full md:border-2 border-purple bg-white text-purple font-bold text-xl flex items-center justify-center ${
             dropDown ? 'rotate-45' : ''
           } transition-transform`}
         >
           +
-        </button>
+        </div>
       </div>
       
       {/* Dropdown content */}
