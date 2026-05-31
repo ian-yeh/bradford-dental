@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import TeamCard from '@/components/TeamCard'
 
 const TeamSection = () => {
@@ -32,13 +33,16 @@ const TeamSection = () => {
           </div>
 
           <div className="text-center mt-12">
-            <button className="font-josefin bg-purple text-white px-6 py-3 rounded-3xl font-semibold hover:bg-whitetransition-colors hover:text-purple border-2 border-purple">
+            <Link
+              href="/team"
+              className="inline-block font-josefin bg-purple text-white px-6 py-3 rounded-3xl font-semibold hover:bg-whitetransition-colors hover:text-purple border-2 border-purple"
+            >
               Meet the Team
-            </button>
+            </Link>
           </div>
         </div>
       </div>
-      
+
     </div>
   )
 }
