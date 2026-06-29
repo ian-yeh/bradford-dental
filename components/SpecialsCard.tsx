@@ -12,7 +12,7 @@ const SpecialsCard = ({ title, description, imageSrc }: SpecialsCardProps) => {
   const [dropDown, setDropDown] = useState(false);
   
   return (
-    <div className='border-2 border-purple rounded-lg overflow-hidden mb-8 cursor-pointer hover:bg-yellow-100 transition-colors' onClick={() => setDropDown(!dropDown)}> 
+    <div className='bg-white border-2 border-purple/25 rounded-lg overflow-hidden mb-8 cursor-pointer hover:border-purple hover:bg-yellow-100 transition-colors duration-300' onClick={() => setDropDown(!dropDown)}>
       {/* Main card content */}
       <div className='p-4 flex items-center justify-between'>
         <div className='flex items-center gap-4'>
@@ -39,7 +39,7 @@ const SpecialsCard = ({ title, description, imageSrc }: SpecialsCardProps) => {
       {dropDown && (
         <div className='px-4 pb-4 border-t border-gray-200 pt-4'>
           <p className='text-black font-poppins mb-3'>{description}</p>
-          <button className='bg-purple border text-white px-4 py-2 rounded-3xl font-josefin hover:bg-white hover:text-purple transition-colors'>
+          <button className='btn px-4 py-2 bg-purple border border-purple text-white hover:bg-white hover:text-purple'>
             Book Now
           </button>
         </div>

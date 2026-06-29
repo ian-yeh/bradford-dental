@@ -22,34 +22,24 @@ const FormIcon = () => (
 const PatientForms = () => {
   return (
     <div className="bg-blue-100 py-16 px-8">
-      <div className="text-center mb-12 max-w-[80%] mx-auto">
+      <div className="text-center mb-12 w-[90%] md:w-[80%] max-w-[1200px] mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold font-josefin text-purple leading-snug">
           Download Patient Forms
         </h2>
       </div>
 
-      <div className="flex flex-col sm:flex-row justify-center items-center gap-6 max-w-[80%] mx-auto">
+      <div className="flex flex-col sm:flex-row justify-center items-center gap-6 w-[90%] md:w-[80%] max-w-[1200px] mx-auto">
         <a
-          href="#"
-          className="flex items-center gap-4 bg-white border border-gray-200 shadow-sm rounded-full pl-2 pr-8 py-2 hover:shadow-md transition-shadow"
+          href="/documents/new-patient-form.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-4 bg-white border border-gray-200 shadow-sm rounded-full pl-2 pr-8 py-2 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300"
         >
           <div className="bg-purple rounded-full w-12 h-12 flex items-center justify-center shrink-0">
             <FormIcon />
           </div>
           <span className="font-josefin text-purple font-semibold text-lg">
             New Patient Form
-          </span>
-        </a>
-
-        <a
-          href="#"
-          className="flex items-center gap-4 bg-white border border-gray-200 shadow-sm rounded-full pl-2 pr-8 py-2 hover:shadow-md transition-shadow"
-        >
-          <div className="bg-purple rounded-full w-12 h-12 flex items-center justify-center shrink-0">
-            <FormIcon />
-          </div>
-          <span className="font-josefin text-purple font-semibold text-lg">
-            COVID-19 Forms
           </span>
         </a>
       </div>

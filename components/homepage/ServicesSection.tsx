@@ -6,14 +6,14 @@ const ServicesSection = () => {
   return (
     <div>
       {/* Services Section */}
-      <div className="bg-white py-16 px-8">
-        <div className="text-center mb-12 md:mb-20 max-w-[80%] mx-auto">
+      <div className="bg-surface py-16 px-8">
+        <div className="text-center mb-12 md:mb-20 w-[90%] md:w-[80%] max-w-[1200px] mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold font-josefin text-purple leading-snug">
             Complete Care for Every Age
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-16 items-start max-w-[80%] mx-auto">
+        <div className="grid md:grid-cols-2 gap-16 items-start w-[90%] md:w-[80%] max-w-[1200px] mx-auto">
           <div>
             <h2 className="text-3xl text-center md:text-left md:text-4xl mb-2 font-bold font-josefin text-purple leading-snug">
               Comprehensive Dental Care
@@ -28,19 +28,19 @@ const ServicesSection = () => {
               <ul className="space-y-4">
                 <ServiceListItem
                   title="Bridges and Dentures"
-                  imageSrc="./icons/bridge-dentures-icon.svg"
+                  imageSrc="/icons/bridge-dentures-icon.svg"
                 />
                 <ServiceListItem
                   title="Cosmetic Dentistry"
-                  imageSrc="./icons/cosmetic-icon.svg"
+                  imageSrc="/icons/cosmetic-icon.svg"
                 />
                 <ServiceListItem
                   title="Orthodontics"
-                  imageSrc="./icons/ortho-icon.svg"
+                  imageSrc="/icons/ortho-icon.svg"
                 />
                 <ServiceListItem
                   title="Crowns"
-                  imageSrc="./icons/crowns-icon.svg"
+                  imageSrc="/icons/crowns-icon.svg"
                 />
               </ul>
             </div>
@@ -48,25 +48,25 @@ const ServicesSection = () => {
               <ul className="space-y-4">
                 <ServiceListItem
                   title="Dental Implants"
-                  imageSrc="./icons/dental-implants.svg"
+                  imageSrc="/icons/dental-implants.svg"
                 />
                 <ServiceListItem
                   title="Root Canal Treatment"
-                  imageSrc="./icons/root-canal-icon.svg"
+                  imageSrc="/icons/root-canal-icon.svg"
                 />
                 <ServiceListItem
                   title="Post Operative Care"
-                  imageSrc="./icons/post-operative-icon.svg"
+                  imageSrc="/icons/post-operative-icon.svg"
                 />
                 <ServiceListItem
                   title="Nutrition"
-                  imageSrc="./icons/nutrition-icon.svg"
+                  imageSrc="/icons/nutrition-icon.svg"
                 />
               </ul>
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16 max-w-[80%] mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16 w-[90%] md:w-[80%] max-w-[1200px] mx-auto">
           <div>
             <h2 className="text-3xl md:text-4xl mb-2 font-bold font-josefin text-purple leading-snug text-center md:text-left">
               In-Office Specials
@@ -80,17 +80,17 @@ const ServicesSection = () => {
             <SpecialsCard 
               title="Take Home Whitening"
               description="Get a comprehensive exam and cleaning for just $99."
-              imageSrc="/images/take-home-whitening.jpg"
+              imageSrc="/images/specials/take-home-whitening.jpg"
             />
             <SpecialsCard 
               title="Zoom Whitening"
               description="New patients can enjoy a free consultation to discuss their dental needs."
-              imageSrc="/images/zoom-whitening.jpg"
+              imageSrc="/images/specials/zoom-whitening.jpg"
             />  
             <SpecialsCard 
               title="Sportsguards"
               description="Protect your smile with our custom sportsguards."
-              imageSrc="/images/sportsguard.jpg"
+              imageSrc="/images/specials/sportsguard.jpg"
             />
           </div>
 
@@ -104,14 +104,14 @@ const ServicesSection = () => {
 export default ServicesSection
 
       {/* Services Section */}
-      <div className="bg-white py-16 px-8">
-        <div className="text-center mb-12 md:mb-20 max-w-[80%] mx-auto">
+      <div className="bg-surface py-16 px-8">
+        <div className="text-center mb-12 md:mb-20 w-[90%] md:w-[80%] max-w-[1200px] mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold font-josefin text-purple leading-snug">
             Complete Care for Every Age
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-16 items-start max-w-[80%] mx-auto">
+        <div className="grid md:grid-cols-2 gap-16 items-start w-[90%] md:w-[80%] max-w-[1200px] mx-auto">
           <div>
             <h2 className="text-3xl text-center md:text-left md:text-4xl mb-2 font-bold font-josefin text-purple leading-snug">
               Comprehensive Dental Care
@@ -126,19 +126,19 @@ export default ServicesSection
               <ul className="space-y-4">
                 <ServiceListItem
                   title="Bridges and Dentures"
-                  imageSrc="./icons/bridge-dentures-icon.svg"
+                  imageSrc="/icons/bridge-dentures-icon.svg"
                 />
                 <ServiceListItem
                   title="Cosmetic Dentistry"
-                  imageSrc="./icons/cosmetic-icon.svg"
+                  imageSrc="/icons/cosmetic-icon.svg"
                 />
                 <ServiceListItem
                   title="Orthodontics"
-                  imageSrc="./icons/ortho-icon.svg"
+                  imageSrc="/icons/ortho-icon.svg"
                 />
                 <ServiceListItem
                   title="Crowns"
-                  imageSrc="./icons/crowns-icon.svg"
+                  imageSrc="/icons/crowns-icon.svg"
                 />
               </ul>
             </div>
@@ -146,25 +146,25 @@ export default ServicesSection
               <ul className="space-y-4">
                 <ServiceListItem
                   title="Dental Implants"
-                  imageSrc="./icons/dental-implants.svg"
+                  imageSrc="/icons/dental-implants.svg"
                 />
                 <ServiceListItem
                   title="Root Canal Treatment"
-                  imageSrc="./icons/root-canal-icon.svg"
+                  imageSrc="/icons/root-canal-icon.svg"
                 />
                 <ServiceListItem
                   title="Post Operative Care"
-                  imageSrc="./icons/post-operative-icon.svg"
+                  imageSrc="/icons/post-operative-icon.svg"
                 />
                 <ServiceListItem
                   title="Nutrition"
-                  imageSrc="./icons/nutrition-icon.svg"
+                  imageSrc="/icons/nutrition-icon.svg"
                 />
               </ul>
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16 max-w-[80%] mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16 w-[90%] md:w-[80%] max-w-[1200px] mx-auto">
           <div>
             <h2 className="text-3xl md:text-4xl mb-2 font-bold font-josefin text-purple leading-snug text-center md:text-left">
               In-Office Specials
@@ -178,17 +178,17 @@ export default ServicesSection
             <SpecialsCard 
               title="Take Home Whitening"
               description="Get a comprehensive exam and cleaning for just $99."
-              imageSrc="/images/take-home-whitening.jpg"
+              imageSrc="/images/specials/take-home-whitening.jpg"
             />
             <SpecialsCard 
               title="Zoom Whitening"
               description="New patients can enjoy a free consultation to discuss their dental needs."
-              imageSrc="/images/zoom-whitening.jpg"
+              imageSrc="/images/specials/zoom-whitening.jpg"
             />  
             <SpecialsCard 
               title="Sportsguards"
               description="Protect your smile with our custom sportsguards."
-              imageSrc="/images/sportsguard.jpg"
+              imageSrc="/images/specials/sportsguard.jpg"
             />
           </div>
 

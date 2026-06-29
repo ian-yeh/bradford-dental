@@ -1,49 +1,70 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Header = () => {
   const [dropDown, setDropDown] = useState(false);
-  const logoDimensions: number = 120;
+  const logoWidth: number = 205;
+  const logoHeight: number = 64;
 
   return (
     <div className="text-purple p-8 items-center justify-center flex">
       <div className="lg:flex justify-between items-center w-[80%] hidden">
         <div className="flex-1 items-center">
-          <Image
-            src="/images/logo.jpg"
-            alt="Logo"
-            width={logoDimensions}
-            height={logoDimensions}
-          />
+          <Link href="/">
+            <Image
+              src="/images/theme/logo.png"
+              alt="Bradford Dental Care"
+              width={logoWidth}
+              height={logoHeight}
+            />
+          </Link>
         </div>
         <nav>
-          <ul className="flex space-x-4 font-josefin">
+          <ul className="flex space-x-6 font-josefin">
             <li>
-              <a href="/about">About</a>
+              <a
+                href="/about"
+                className="hover:text-purple-dark transition-colors duration-200"
+              >
+                About
+              </a>
             </li>
             <li>
-              <a href="/services">Services</a>
+              <a
+                href="/services"
+                className="hover:text-purple-dark transition-colors duration-200"
+              >
+                Services
+              </a>
             </li>
             <li>
-              <a href="/contact">Contact</a>
+              <a
+                href="/contact"
+                className="hover:text-purple-dark transition-colors duration-200"
+              >
+                Contact
+              </a>
             </li>
           </ul>
         </nav>
         <div className="flex flex-1 justify-end">
-          <button className="bg-purple text-white px-8 py-3 rounded-3xl font-josefin">
+          <button className="btn bg-purple text-white hover:bg-purple-dark">
             Book an Appointment
           </button>
         </div>
       </div>
       <div className="flex lg:hidden justify-between items-center w-[80%]">
         <div className="flex-1 items-center">
-          <Image
-            src="/images/logo.jpg"
-            alt="Logo"
-            width={logoDimensions - 30}
-            height={logoDimensions - 30}
-          />
+          <Link href="/">
+            <Image
+              src="/images/theme/logo.png"
+              alt="Bradford Dental Care"
+              width={logoWidth - 50}
+              height={logoHeight - 16}
+            />
+          </Link>
         </div>
         <div className="relative">
           <button onClick={() => setDropDown(!dropDown)}>
