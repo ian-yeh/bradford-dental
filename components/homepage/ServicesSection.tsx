@@ -6,7 +6,7 @@ const ServicesSection = () => {
   return (
     <div>
       {/* Services Section */}
-      <div className="bg-surface py-16 px-8">
+      <div className="bg-white py-16 px-8">
         <div className="text-center mb-12 md:mb-20 w-[90%] md:w-[80%] max-w-[1200px] mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold font-josefin text-purple leading-snug">
             Complete Care for Every Age
