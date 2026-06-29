@@ -19,13 +19,40 @@
 @theme inline {
   --font-josefin: "Josefin Sans", sans-serif;
   --font-poppins: "Poppins", sans-serif;
-  
+
   /* Color Variables */
   --color-purple: #253b8e;
-  --color-yellow-100: #fffee3;
-  --color-blue-100: #b3edff;
+  --color-purple-dark: #1b2c6e;
+  --color-surface: #eaeef5;
+  --color-yellow-100: #f5edd6;
+  --color-blue-100: #d9e8f3;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-poppins), Arial, Helvetica, sans-serif;
+  background-color: var(--color-surface);
+  color: #25292e;
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center font-josefin font-semibold
+      rounded-full px-6 py-3 cursor-pointer transition-all duration-300 ease-out;
+  }
+
+  .btn:hover {
+    @apply -translate-y-0.5 shadow-lg;
+  }
+
+  .btn:focus-visible {
+    @apply outline-none ring-2 ring-offset-2 ring-purple;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn,
+  .btn:hover {
+    transition: none;
+    transform: none;
+  }
 }
