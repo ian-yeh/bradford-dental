@@ -65,7 +65,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-purple px-8 pt-16 pb-8">
-      <div className="max-w-[80%] mx-auto">
+      <div className="w-[90%] md:w-[80%] max-w-[1200px] mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           <div>
             <h3 className="text-2xl font-bold font-josefin text-yellow-100 mb-6">
@@ -115,21 +115,21 @@ const Footer = () => {
               <a
                 href="#"
                 aria-label="Google"
-                className="bg-white rounded-full w-11 h-11 flex items-center justify-center hover:scale-110 transition-transform"
+                className="bg-white rounded-full w-11 h-11 flex items-center justify-center hover:scale-110 transition-transform duration-300"
               >
                 <GoogleIcon />
               </a>
               <a
                 href="#"
                 aria-label="Facebook"
-                className="rounded-full w-11 h-11 flex items-center justify-center overflow-hidden hover:scale-110 transition-transform"
+                className="rounded-full w-11 h-11 flex items-center justify-center overflow-hidden hover:scale-110 transition-transform duration-300"
               >
                 <FacebookIcon />
               </a>
               <a
                 href="#"
                 aria-label="Instagram"
-                className="bg-white rounded-full w-11 h-11 flex items-center justify-center hover:scale-110 transition-transform"
+                className="bg-white rounded-full w-11 h-11 flex items-center justify-center hover:scale-110 transition-transform duration-300"
               >
                 <InstagramIcon />
               </a>
