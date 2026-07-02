@@ -6,7 +6,7 @@ const TeamSection = () => {
   return (
     <div>
       {/* Team Section */}
-      <div className="bg-surface py-16 px-8">
+      <div id="team" className="bg-surface py-16 px-8 scroll-mt-24">
         <div className="w-[90%] md:w-[80%] max-w-[1200px] mx-auto">
           {/* Section Heading */}
           <div className="text-center mb-12">

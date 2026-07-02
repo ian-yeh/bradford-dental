@@ -1,15 +1,23 @@
 import React from "react";
 
 const services = [
-  { title: "Ortho", href: "#" },
-  { title: "Cosmetic Dentistry", href: "#" },
-  { title: "Root Canal Treatment", href: "#" },
-  { title: "Bridges & Dentures", href: "#" },
-  { title: "Nutrition", href: "#" },
-  { title: "Crowns", href: "#" },
-  { title: "Dental Implants", href: "#" },
-  { title: "Post Operative Care", href: "#" },
+  { title: "Ortho", href: "https://www.cda-adc.ca/en/oral_health/talk/procedures/orthodontics/" },
+  { title: "Cosmetic Dentistry", href: "https://www.oda.on.ca/cosmetic-dentistry" },
+  { title: "Root Canal Treatment", href: "https://www.cda-adc.ca/en/oral_health/talk/procedures/root_canal/" },
+  { title: "Bridges & Dentures", href: "https://www.cda-adc.ca/en/oral_health/talk/procedures/bridges_dentures/" },
+  { title: "Nutrition", href: "https://www.cda-adc.ca/en/oral_health/cfyt/dental_care/nutrition.asp" },
+  { title: "Crowns", href: "https://www.cda-adc.ca/en/oral_health/talk/procedures/crowns/" },
+  { title: "Dental Implants", href: "https://www.cda-adc.ca/en/oral_health/talk/procedures/dental_implants/" },
+  { title: "Post Operative Care", href: "https://www.cda-adc.ca/en/oral_health/talk/procedures/oral_surgery/" },
 ];
+
+const socials = {
+  google:
+    "https://www.google.com/search?q=bradford+dental+care&oq=bradford&aqs=chrome.0.69i59j69i57j0l6.3171j0j8&sourceid=chrome&ie=UTF-8",
+  facebook:
+    "https://www.facebook.com/Bradford-Dental-Care-107429076417419/?eid=ARCpk6Z0yNg5clejs0yI0bxUi2CkyykFO85WEOc2F6TwHJihztMaI15GTgeIyvAhaX7w5UDXdr1zkV3G",
+  instagram: "https://instagram.com/bradford_dental_care?igshid=1m7g39su7xvsu",
+};
 
 const GoogleIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="22" height="22">
@@ -77,6 +85,8 @@ const Footer = () => {
                   <li key={s.title}>
                     <a
                       href={s.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="font-josefin font-semibold text-white hover:text-yellow-100 transition-colors"
                     >
                       {s.title}
@@ -89,6 +99,8 @@ const Footer = () => {
                   <li key={s.title}>
                     <a
                       href={s.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="font-josefin font-semibold text-white hover:text-yellow-100 transition-colors"
                     >
                       {s.title}
@@ -113,21 +125,27 @@ const Footer = () => {
             </h3>
             <div className="flex items-center gap-4">
               <a
-                href="#"
+                href={socials.google}
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label="Google"
                 className="bg-white rounded-full w-11 h-11 flex items-center justify-center hover:scale-110 transition-transform duration-300"
               >
                 <GoogleIcon />
               </a>
               <a
-                href="#"
+                href={socials.facebook}
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label="Facebook"
                 className="rounded-full w-11 h-11 flex items-center justify-center overflow-hidden hover:scale-110 transition-transform duration-300"
               >
                 <FacebookIcon />
               </a>
               <a
-                href="#"
+                href={socials.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label="Instagram"
                 className="bg-white rounded-full w-11 h-11 flex items-center justify-center hover:scale-110 transition-transform duration-300"
               >
