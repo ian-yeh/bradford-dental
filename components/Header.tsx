@@ -1,12 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
+import BookAppointmentButton from "@/components/BookAppointmentModal";
 
-const Header = () => {
-  const logoWidth: number = 205;
-  const logoHeight: number = 64;
+const Header = ({ bgClass = "" }: { bgClass?: string }) => {
+  const logoWidth: number = 150;
+  const logoHeight: number = 47;
 
   return (
-    <div className="text-purple p-8 items-center justify-center flex">
+    <div className={`${bgClass} text-purple p-8 items-center justify-center flex`}>
       <div className="lg:flex justify-between items-center w-[80%] hidden">
         <div className="flex-1 items-center">
           <Link href="/">
@@ -19,9 +20,7 @@ const Header = () => {
           </Link>
         </div>
         <div className="flex flex-1 justify-end">
-          <button className="btn bg-purple text-white hover:bg-purple-dark">
-            Book an Appointment
-          </button>
+          <BookAppointmentButton />
         </div>
       </div>
       <div className="flex lg:hidden justify-between items-center w-[80%]">
@@ -35,9 +34,7 @@ const Header = () => {
             />
           </Link>
         </div>
-        <button className="btn bg-purple text-white hover:bg-purple-dark">
-          Book an Appointment
-        </button>
+        <BookAppointmentButton />
       </div>
     </div>
   );

@@ -17,8 +17,8 @@ const Home = () => {
 
       <HeroSection />
       <LocationSection />
-      <TeamSection />
       <ServicesSection />
+      <TeamSection />
       <Testimonials />
       <PatientForms />
       <Footer />
