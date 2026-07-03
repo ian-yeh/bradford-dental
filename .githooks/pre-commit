@@ -1,0 +1,4 @@
+#!/bin/sh
+# Verify the app builds (same as Vercel deploy) before allowing a commit.
+echo "pre-commit: running npm run build..."
+npm run build

@@ -72,7 +72,7 @@ const assistants: {
 const TeamPage = () => {
   return (
     <div>
-      <Header />
+      <Header bgClass="bg-white" />
 
       <section className="bg-surface py-16 px-4 sm:px-8">
         <div className="w-[90%] md:w-[80%] max-w-[1200px] mx-auto">
