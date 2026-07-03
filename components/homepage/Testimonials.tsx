@@ -31,7 +31,7 @@ const initialsOf = (name: string) =>
 
 const Testimonials = () => {
   return (
-    <div className="bg-surface py-16 px-8">
+    <div className="bg-surface py-16 px-4 sm:px-8">
       <div className="w-[90%] md:w-[80%] max-w-[1200px] mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold font-josefin text-purple leading-snug mb-4">

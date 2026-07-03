@@ -1,7 +1,13 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect, useState, type ReactNode } from "react";
 
-const BookAppointmentButton = () => {
+const BookAppointmentButton = ({
+  className = "btn bg-purple text-white hover:bg-purple-dark",
+  children = "Book an Appointment",
+}: {
+  className?: string;
+  children?: ReactNode;
+}) => {
   const [open, setOpen] = useState(false);
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
@@ -29,11 +35,8 @@ const BookAppointmentButton = () => {
 
   return (
     <>
-      <button
-        className="btn bg-purple text-white hover:bg-purple-dark"
-        onClick={() => setOpen(true)}
-      >
-        Book an Appointment
+      <button className={className} onClick={() => setOpen(true)}>
+        {children}
       </button>
 
       {open && (

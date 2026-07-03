@@ -14,8 +14,8 @@ const SpecialsCard = ({ title, description, imageSrc }: SpecialsCardProps) => {
   return (
     <div className='bg-white border-2 border-purple/25 rounded-lg overflow-hidden mb-8 cursor-pointer hover:border-purple hover:bg-yellow-100 transition-colors duration-300' onClick={() => setDropDown(!dropDown)}>
       {/* Main card content */}
-      <div className='p-4 flex items-center justify-between'>
-        <div className='flex items-center gap-4'>
+      <div className='p-4 flex items-center justify-between gap-3'>
+        <div className='flex items-center gap-3 md:gap-4 min-w-0'>
           <Image 
             src={imageSrc}
             alt={title}
@@ -27,7 +27,7 @@ const SpecialsCard = ({ title, description, imageSrc }: SpecialsCardProps) => {
         </div>
         
         <div 
-          className={`w-6 h-6 md:w-8 md:h-8 rounded-full md:border-2 border-purple bg-white text-purple font-bold text-xl flex items-center justify-center ${
+          className={`w-6 h-6 md:w-8 md:h-8 shrink-0 rounded-full md:border-2 border-purple bg-white text-purple font-bold text-xl flex items-center justify-center ${
             dropDown ? 'rotate-45' : ''
           } transition-transform`}
         >

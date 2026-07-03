@@ -21,7 +21,7 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-gradient-to-r from-purple/95 via-purple/60 to-purple/5" />
 
       {/* Content */}
-      <div className="relative z-10 flex min-h-[70vh] items-center">
+      <div className="relative z-10 flex min-h-[70vh] items-center py-16">
         <div className="mx-auto w-[90%] max-w-[1200px]">
           <div className="max-w-xl text-center md:text-left">
             <p className="animate-fade-up mb-4 font-josefin text-xs sm:text-sm uppercase tracking-[0.3em] text-blue-100">

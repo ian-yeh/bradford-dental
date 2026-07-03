@@ -74,7 +74,7 @@ const TeamPage = () => {
     <div>
       <Header bgClass="bg-white" />
 
-      <section className="bg-surface py-16 px-8">
+      <section className="bg-surface py-16 px-4 sm:px-8">
         <div className="w-[90%] md:w-[80%] max-w-[1200px] mx-auto">
           <div className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-bold font-josefin text-purple leading-snug mb-6">
@@ -95,7 +95,7 @@ const TeamPage = () => {
             ))}
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-6 mb-6">
             {hygienists.map((h) => (
               <StaffCard
                 key={h.name}
@@ -106,7 +106,7 @@ const TeamPage = () => {
             ))}
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-6 mb-6">
             {assistants.map((a) => (
               <StaffCard
                 key={a.name}
@@ -117,7 +117,7 @@ const TeamPage = () => {
             ))}
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-6">
             <div className="hidden md:block" />
             <StaffCard
               name="Jessica"
