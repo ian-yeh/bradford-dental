@@ -9,7 +9,7 @@ interface TeamCardProps {
 
 const TeamCard = ({ title, description, imageSrc }: TeamCardProps) => {
   return (
-    <div className="bg-white border border-purple/25 p-10 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+    <div className="bg-white border border-purple/25 p-6 md:p-10 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
       <div className="mx-auto">
         <Image
           src={imageSrc}

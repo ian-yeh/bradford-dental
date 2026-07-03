@@ -21,7 +21,7 @@ const FormIcon = () => (
 
 const PatientForms = () => {
   return (
-    <div className="bg-blue-100 py-16 px-8">
+    <div className="bg-blue-100 py-16 px-4 sm:px-8">
       <div className="text-center mb-12 w-[90%] md:w-[80%] max-w-[1200px] mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold font-josefin text-purple leading-snug">
           Download Patient Forms
