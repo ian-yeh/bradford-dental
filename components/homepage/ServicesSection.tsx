@@ -75,6 +75,19 @@ const ServicesSection = () => {
               Maintaining a healthy, attractive smile is important for more
               than just aesthetics; it&apos;s about good overall health.
             </p>
+            <ul className="mt-8 space-y-3">
+              {[
+                'We accept the Canadian Dental Care Plan (CDCP)',
+                'We offer direct billing to your insurance',
+              ].map((text) => (
+                <li
+                  key={text}
+                  className="bg-blue-100 border-l-4 border-purple rounded-md px-5 py-4 text-base md:text-lg font-josefin font-bold text-purple"
+                >
+                  {text}
+                </li>
+              ))}
+            </ul>
           </div>
           <div>
             <SpecialsCard
