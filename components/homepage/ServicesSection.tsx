@@ -82,7 +82,7 @@ const ServicesSection = () => {
               ].map((text) => (
                 <li
                   key={text}
-                  className="bg-blue-100 border-l-4 border-purple rounded-md px-5 py-4 text-base md:text-lg font-josefin font-bold text-purple"
+                  className="bg-blue-100 rounded-md px-5 py-4 text-base md:text-lg font-josefin font-bold text-purple"
                 >
                   {text}
                 </li>
